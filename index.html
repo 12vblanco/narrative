@@ -8,55 +8,42 @@
       body {
         font-family: Arial, sans-serif;
       }
-      .forum-container {
-        width: 90%;
-        margin: 0 auto;
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 180px;
       }
-      .forum-topic {
-        border-bottom: 1px solid #ccc;
-        padding: 8px;
-        margin-bottom: 6px;
+      label {
+        padding: 5px;
+        margin-bottom: 4px;
       }
-      h1 {
+      button {
+        max-width: fit-content;
+        margin-top: 8px;
+        align-self: center;
+        padding: 0.6rem 0.8rem;
+      }
+      a {
+        text-decoration: none;
         color: #333;
-      }
-      .forum-topic h2 {
-        font-size: 18px;
-        color: #333;
-      }
-      .forum-topic p {
-        font-size: 15px;
-        line-height: 1.6;
-        max-width: 500px;
       }
     </style>
   </head>
   <body>
-    <div class="forum-container">
-      <h1>The bottom of the rabbit hole</h1>
-      <div class="forum-topic">
-        <h2>Well done Stranger</h2>
-        <p>
-          From the depths of the heart of Scotland, where the yearning for
-          freedom sounds loudest, we launch our call.<br /><br />
-          To keep the digital realm free, we look for individuals that value
-          privacy. Our paths are carved through the urban fabric keeping the
-          data for those who can understand its value and from those who only
-          seek to control it. Embedded in the normal and hidden in plain sight,
-          symbols and whispers guide our movements, leaving traces only for
-          those who share our values. <br /><br />In this hybrid world where the
-          data is often denied and censored, taken from us in secret, our union
-          will fight against the chains of control. Join us where the physical
-          meets the digital. “We shall meet in the place where there is no
-          darkness.” <br /><br />Now we know how to find you and soon you will
-          be called. <br /><br />It will be up to you to answer that call, if
-          you wish, or to forget this ever happened and hear from us never
-          again. <br />The time will be soon.
-        </p>
-      </div>
-      <div class="forum-topic">
-        <p><b>The End</b></p>
-      </div>
-    </div>
+    <form>
+      <label for="city">City:</label>
+      <input
+        type="text"
+        id="city"
+        name="city"
+        placeholder="Edinburgh"
+        required
+      />
+
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" placeholder="1875" required />
+
+      <button><a href="content.html">Login</a></button>
+    </form>
   </body>
 </html>
